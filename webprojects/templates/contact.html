@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIFAH'S CLOSET</title>
+     <a href="{% url 'homepage' %}">Home</a>
+    <link rel="stylesheet" href="style.css">
+   <!-- <link rel="stylesheet" href="design.js">-->
+   
+    <link rel="stylesheet" href=" static/css/base.css ">
+    <script>
+        function successfull(){
+    alert("submitted successfully");
+
+
+}
+    </script>
+</head>
+<body id="body2">
+    <h1 id="Order">Order With Us</h1>
+    <form action="" method="POST">
+      <p><input type="text" class="form" id="" placeholder="Name"></p>
+     <p><input type="text" class="form" id="" placeholder="Contact"></p>
+     <p><input type="text" class="form" id="" placeholder="Email"></p>
+     <p><input type="text" class="form" id="" placeholder="Adress"></p>
+     <p><input type="text" class="form" id="" placeholder="product"></p>
+     <p><input type="text" class="form" id="" placeholder="Size"></p>
+    </form>
+    <form action="">
+     <p>
+     <select class="form">
+         <option value="mobilemoney">mobilemoney</option>
+         <option value="VisaCard">VisaCard</option>
+         <option value="Cash On Delievery">Cash On Delievery</option>
+     </select></p>
+       <button onclick="successfull()" id="btn">Submit</button>
+    </form>
+ <div id="Location">
+    <h2 id="n">Order Now!!</h2>
+    <h3 id="y">+256-704-955-791</h3>
+    <h2 id="O">Location:Old Kampala</h2>
+ </div>
+    
+</body>
+</html>

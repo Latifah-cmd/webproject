@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+     <a href="{% url 'homepage' %}">Home</a>
+     <link rel="stylesheet" href=" static/css/base.css ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design.js">
+    
+</head>
+
+<body id="gallery">
+    <div id="group-img1">
+    
+    <img src="('{% url 'images/bb.jpg' %}')" class="image" width="200px"alt="">
+    <img src="('{% url 'images/IMG-20230921-WA0131.jpg' %}')" class="image" width="200px"alt="">
+    <img src="('{% url 'images/IMG-20230921-WA0129.jpg' %}')" class="image" width="200px"alt="">
+    <img src="('{% url 'images/IMG-20230921-WA0130.jpg' %}')" class="image" width="200px"alt="">
+    <img src="('{% url 'images/IMG-20230921-WA0132.jpg' %}')" class="image" width="200px"alt="">
+    
+    </div>
+    <div id="group-img2">
+    <img src="{% url 'images/IMG-20230925-WA0070.jpg' %}" class="image" width="200px"alt="">
+    <img src="{% url 'images/IMG-20230925-WA0072.jpg' %}" class="image" width="200px"alt="">
+    <img src="{% url 'images/5.jpg' %}" class="image" width="200px"alt="">
+    <img src="{% url 'images/6.jpg' %}" class="image" width="200px"alt="">
+    <img src="{% url 'images/7.jpg' %}" class="image" width="200px"alt="">
+    <img src="{% url 'images/8.jpg' %}" class="image" width="200px"alt="">
+    <img src="{% url 'images/IMG-20230925-WA0071.jpg' %}" class="image" width="200px"alt="">
+    
+    
+   </div>
+    <div id="group-vid1">
+    <img src="{% url 'images/IMG-20230720-WA0153.jpg' %}" class="image" width="200px"alt="">
+    <img src="{% url 'images/IMG-20230720-WA0096.jpg' %}" class="image" width="200px"alt="">
+    <img src="{% url 'images/IMG-20230720-WA0097.jpg' %}" class="image" width="200px"alt="">
+    
+    <video src="{% url 'videos/VID-20230710-WA0228.mp4' %}" width="200px"controls ></video>
+    <video src="{% url 'videos/VID-20230710-WA0230.mp4' %}" width="200px"controls autoplay></video>
+   </div>
+</body>
+
+</html>

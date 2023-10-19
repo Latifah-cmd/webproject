@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIFAH'S CLOSET</title>
+    
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="design.js">
+    <link rel="stylesheet" href=" static/css/base.css ">
+   
+     
+</head>
+<body id="body1">
+    <div id="TC-div">
+    <div id="title-div">
+        <h1 id="CLOSET">TIFAH'S CLOSET</h1>
+        
+    </div>
+    
+    <div id="menu-div">
+        <ul id="list-items">
+            <li><a href="home.html" id="home">Home</li></a>
+            <li><a href="{% url 'aboutuspage' %}" id="Us">About Us</li></a>
+            <li><a href="{% url 'servicespage' %}" id="service">Services</li></a>
+            <li><a href="{% url 'gallerypage' %}" id="Gallery">Gallery</li></a>
+            <li><a href="{% url 'contactuspage' %}" id="Contact">Contact Us</li></a>
+
+        </ul>
+    </div>
+</div>
+<div id="image2">
+
+    <img src="{% static 'images/bb5.jpg' %}" widhth="300px" id="image2" alt="">
+
+</div>
+</body>
+<footer id="footer">
+    &copy; copy right reserved
+</footer>
+
+</html>

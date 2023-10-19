@@ -1,0 +1,133 @@
+#CLOSET{
+    color:rgb(242, 227, 8);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+#body1{
+  background-color: rgb(4, 4, 55);
+}
+
+.form{
+    height: 30px;
+    width: 240px;
+    border: 2px #f4d20e solid;
+    border-radius: 8px;
+}
+#btn{
+    height: 30px;
+    width: 210px;
+    border: 2px;
+    border-radius: 30px;
+    background-color: #f4d20e;
+    font-size: 25px;
+}
+#body2{
+    background-color: rgb(20, 204, 186);
+}
+#TC-div{
+    
+    height: 80px;
+    
+}
+#menu-div{
+    
+    float: right;
+}
+#list-items li{
+      display: inline;
+      color: #f4d20e;
+      padding: 5px;
+      border-right: 2px solid cornsilk;
+}
+#title-div{
+    float: left;
+}
+
+#image-div{
+    width: 2220px;
+    
+}
+#image2{
+    width: 80%;
+    
+  float:left;
+     
+}
+
+#gallery{
+    background-color: aqua;
+    
+}
+
+#footer{
+    color: #f4d20e;
+    
+}
+#h2{
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+    float: left;
+    height: 50px;
+    padding: 6px;
+    
+}
+body{
+    background-color: rgb(20, 204, 186);
+}
+#image3{
+    width: 80%;
+    border-radius: 10px;
+    
+}
+#mission,#values,#weOffer{
+    
+    width: 30%;
+    float: left;
+}
+#image33{
+    float: left;
+
+}
+#Our{
+   
+    font-style: oblique;
+}
+#Veiling,#MakeUp{
+    width: 50%;
+    float: left;
+}
+#henna,#Muslim{
+    width: 50%;
+    float: left;
+}
+#home{
+    color: #f4d20e;
+}
+#Us{
+    color: #f4d20e;
+}
+#service{
+    color:#f4d20e ;
+}
+#Gallery{
+    color: #f4d20e;
+}
+#Contact{
+    color: #f4d20e;
+}
+#Order{
+    color: #000;
+}
+#Order:hover{
+    color: #f4d20e;
+}
+#Location{
+    background-color:aliceblue;
+    
+}
+#n,#y,#O{
+    width: 30%;
+    float: left;
+    color: #76725a;
+}
