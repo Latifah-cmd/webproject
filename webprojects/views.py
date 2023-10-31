@@ -1,6 +1,8 @@
 #from django.http import HttpResponse
 from django.shortcuts import render
 
+from webprojects.forms import ClientForm
+
 def homepage_view(request):
     return render(request, 'home.html')
 
@@ -15,3 +17,20 @@ def servicespage_view(request):
 
 def gallerypage_view(request):
     return render(request,'gallery.html')
+
+def add_client_view(request):
+     if request.method == "POST":
+         client_form = ClientForm(request.POST)
+
+         if client_form.is_valid():
+             client_form.save()
+     else:
+             client_form = ClientForm()
+     context = {
+          'form': client_form,
+     }
+
+     return render(request,"add_client")
+
+
+         
