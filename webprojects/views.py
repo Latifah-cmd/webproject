@@ -23,11 +23,11 @@ def contactuspage_view(request):
              client_form.save()
      else:
              client_form = ClientForm()
-     context = {
-           client_form,
-     }
+     #context = {
+          # client_form,
+     #}
 
-     return render(request,"contact.html",context)
+     return render(request,"contact.html")
 
 
          
