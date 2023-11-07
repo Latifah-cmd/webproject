@@ -9,16 +9,13 @@ def homepage_view(request):
 def aboutuspage_view(request):
     return render(request,'aboutus.html')
 
-def contactuspage_view(request):
-    return render(request,'contact.html')
-
 def servicespage_view(request):
     return render(request,'services.html')
 
 def gallerypage_view(request):
     return render(request,'gallery.html')
 
-def add_client_view(request):
+def contactuspage_view(request):
      if request.method == "POST":
          client_form = ClientForm(request.POST)
 
@@ -27,10 +24,10 @@ def add_client_view(request):
      else:
              client_form = ClientForm()
      context = {
-          'form': client_form,
+           client_form,
      }
 
-     return render(request,"add_client")
+     return render(request,"contact.html",context)
 
 
          

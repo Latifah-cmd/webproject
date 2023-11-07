@@ -1,4 +1,4 @@
-from xmlrpc import client
+
 from django.db import models
 class Client(models.Model):
     
@@ -21,7 +21,7 @@ class Client(models.Model):
 
 class category (models.Model):
      
-       category_id= models.IntegerField(max_length=30)
+       category_id= models.IntegerField
 
 class Product (models.Model):
      product_id = models.IntegerField

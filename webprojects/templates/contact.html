@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIFAH'S CLOSET</title>
+
      <a href="{% url 'homepage' %}">Home</a>
     <link rel="stylesheet" href="style.css">
    <!-- <link rel="stylesheet" href="design.js">-->
@@ -22,6 +23,8 @@
 <body id="body2">
     <h1 id="Order">Order With Us</h1>
     <form action="" method="POST">
+      {% csrf_token %}
+      
       <p><input type="text" class="form" id="" placeholder="first_Name"></p>
       <p><input type="text" class="form" id="" placeholder="last_Name"></p>
      <p><input type="text" class="form" id="" placeholder="Contact"></p>
@@ -30,7 +33,8 @@
      <p><input type="text" class="form" id="" placeholder="product"></p>
      <p><input type="text" class="form" id="" placeholder="Size"></p>
     </form>
-    <form action="">
+    <form action="" method="POST">
+    {% csrf_token %}
      <p>
      <select class="form">
          <option value="mobilemoney">mobilemoney</option>
