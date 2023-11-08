@@ -24,17 +24,19 @@
     <h1 id="Order">Order With Us</h1>
     <form action="" method="POST">
       {% csrf_token %}
-      
-      <p><input type="text" class="form" id="" placeholder="first_Name"></p>
+      {{form.as_p}}
+      <button type = "submit">Submit</button>
+      <!--<p><input type="text" class="form" id="" placeholder="first_Name"></p>
       <p><input type="text" class="form" id="" placeholder="last_Name"></p>
      <p><input type="text" class="form" id="" placeholder="Contact"></p>
      <p><input type="text" class="form" id="" placeholder="Email"></p>
      <p><input type="text" class="form" id="" placeholder="Adress"></p>
      <p><input type="text" class="form" id="" placeholder="product"></p>
      <p><input type="text" class="form" id="" placeholder="Size"></p>
-    </form>
-    <form action="" method="POST">
+    </form>-->
+   <!-- <form action="" method="POST">
     {% csrf_token %}
+      
      <p>
      <select class="form">
          <option value="mobilemoney">mobilemoney</option>
@@ -42,7 +44,7 @@
          <option value="Cash On Delievery">Cash On Delievery</option>
      </select></p>
        <button onclick="successfull()" id="btn">Submit</button>
-    </form>
+    </form>-->
  <div id="Location">
     <h2 id="n">Order Now!!</h2>
     <h3 id="y">+256-704-955-791</h3>

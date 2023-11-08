@@ -27,7 +27,7 @@ def contactuspage_view(request):
           # client_form,
      #}
 
-     return render(request,"contact.html")
+     return render(request,"contact.html",{'form':client_form})
 
 
          
